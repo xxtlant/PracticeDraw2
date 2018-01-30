@@ -30,7 +30,8 @@ public class Practice16TextPathView extends View {
         paint.setTextSize(120);
 
         // 使用 Paint.getTextPath() 来获取文字的 Path
-
+        // x ,y 是绘制文字的坐标点
+        paint.getTextPath(text,0,text.length(),50,400,textPath);
         pathPaint.setStyle(Paint.Style.STROKE);
     }
 
